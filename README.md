@@ -21,4 +21,5 @@ Android 기반 교육용 어플리케이션으로 sqlite을 사용하여 내장 
     SQLite
     
       1. SQLite의 내용 확인및 데이터를 넣기 위해 SQLite Browser 
+      2.
 #
