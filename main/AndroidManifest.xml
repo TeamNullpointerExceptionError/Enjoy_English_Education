@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.teamnull.user.myapplication"
+    >
+
+    <application
+        android:debuggable="false"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="E.E.E"
+        android:roundIcon="@drawable/icon"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".one" />
+        <activity android:name=".two" />
+        <activity android:name=".three"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".second_one" />
+        <activity android:name=".second_two" />
+        <activity android:name=".second_three"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".third_one"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".third_two" />
+    </application>
+
+</manifest>

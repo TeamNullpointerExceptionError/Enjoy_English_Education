@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/round5">
+
+   <TabHost
+       android:id="@+id/tab_host"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >
+
+      <LinearLayout
+          android:id="@+id/tab_bar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:background="#FFBB00">
+
+         <LinearLayout
+             android:background="#FFBB00"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1.4"
+             tools:ignore="Suspicious0dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="2.3"
+                android:background="@drawable/title" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:background="@drawable/title"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"
+                />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/tab_right"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top"
+                />
+
+         </LinearLayout>
+
+
+      </LinearLayout>
+
+      <FrameLayout
+
+          android:id="@android:id/tabcontent"
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent">
+
+         <!--Tab1 -->
+         <LinearLayout
+             android:id="@+id/tab_view1"
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             >
+
+            <LinearLayout
+                android:id="@+id/tab1_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tab1_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   >
+
+                  <Button
+                      android:id="@+id/one"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/phonicslearning"
+                      android:textSize="20dp" />
+
+                  <Button
+                      android:id="@+id/two"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/phonicsdrawing"
+                      android:textSize="20dp" />
+
+                  <Button
+                      android:id="@+id/three"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/phonicsquiz"
+                      android:textSize="20dp" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="5"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="top|center"
+                      android:text="학습하기"
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="top|center"
+                      android:text="따라 쓰기"
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="top|center"
+                      android:text="퀴즈"
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab1_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="ver 1.0.0"
+                android:textAlignment="viewEnd"
+                tools:ignore="RtlCompat"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+         </LinearLayout>
+
+         <!--Tab2-->
+         <LinearLayout
+             android:id="@+id/tab_view2"
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             >
+
+            <LinearLayout
+                android:id="@+id/tab2_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tab2_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   >
+
+                  <Button
+                      android:id="@+id/second_one"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/wordlearning"
+                      android:textSize="20dp" />
+
+                  <Button
+                      android:id="@+id/second_two"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/wordwrite"
+                      android:textSize="20dp" />
+
+                  <Button
+                      android:id="@+id/second_three"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/wordquiz"
+                      android:textSize="20dp" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="5"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="top|center"
+                      android:text="학습하기"
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="top|center"
+                      android:text=" 쓰기 "
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="top|center"
+                      android:text="퀴즈"
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="bottom"
+                   android:text="ver 1.0.0"
+                   android:textAlignment="viewEnd"
+                   tools:ignore="RtlCompat"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+         <!--Tab3-->
+         <LinearLayout
+             android:id="@+id/tab_view3"
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             >
+
+            <LinearLayout
+                android:id="@+id/tab3_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tab3_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   >
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="3">
+                  </LinearLayout>
+
+                  <Button
+                      android:id="@+id/third_one"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="2"
+                      android:background="@drawable/game1"
+                      android:textSize="20dp" />
+
+                  <LinearLayout
+                      android:id="@+id/emptyicon"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="3"
+                      android:orientation="horizontal">
+                  </LinearLayout>
+
+                  <Button
+                      android:id="@+id/third_two"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="2dp"
+                      android:layout_weight="2"
+                      android:background="@drawable/game2"
+                      android:textSize="20dp" />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="3">
+                  </LinearLayout>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="5"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   >
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="3">
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:gravity="top|center"
+                      android:text="크로스 워드"
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="3">
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:gravity="top|center"
+                      android:text="카드 뒤집기"
+                      android:textColor="#000000"
+                      android:textStyle="bold"
+                      />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="3">
+                  </LinearLayout>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab3_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="bottom"
+                   android:text="ver 1.0.0"
+                   android:textAlignment="viewEnd"
+                   tools:ignore="RtlCompat"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+         </LinearLayout>
+
+      </FrameLayout
+          >
+   </TabHost>
+</LinearLayout>

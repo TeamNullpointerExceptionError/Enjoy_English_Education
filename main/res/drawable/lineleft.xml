@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:bottom="0dp">
+                <shape>
+                    <!-- 버튼 테두리를 얼마만큼 둥글게 해줄지 설정 -->
+                    <corners android:topLeftRadius="17dp"
+                        android:bottomLeftRadius="17dp"
+                        />
+                    <!--버튼 안쪽 배경색 지정-->
+                    <solid android:color="#22741C" />
+                    <!-- stroke 테두리의 (width)두께와 (color)색을 뜻한다 -->
+                    <stroke android:width="0.2dp" android:color="#22741C" />
+                    <!--버튼 안쪽의 글과 테두리의 padding여백을 뜻한다-->
+                    <padding
+                        android:bottom="0dp"
+                        android:left="0dp"
+                        android:right="0dp"
+                        android:top="0dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
